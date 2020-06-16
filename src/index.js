@@ -1,8 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import './fonts/Judson-Bold.ttf';
+import './fonts/Judson-Regular.ttf';
+import './fonts/Raleway-Black.ttf';
+import './fonts/Raleway-Light.ttf';
+import './fonts/Raleway-Regular.ttf';
 import './index.css';
 import App from './App';
-import * as serviceWorker from './serviceWorker';
+
 
 ReactDOM.render(
   <React.StrictMode>
@@ -10,8 +15,3 @@ ReactDOM.render(
   </React.StrictMode>,
   document.getElementById('root')
 );
-
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();

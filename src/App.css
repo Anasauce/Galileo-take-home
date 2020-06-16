@@ -1,38 +1,198 @@
-.App {
-  text-align: center;
+h1 {
+  font-size: 3.5rem;
+  margin: 0px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+p {
+  font-size: 1rem;
+  margin: 0px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+li {
+  list-style-type: none;
+}
+
+.header  {
+  background-color: #0E1330;
+  width: 100%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.header__text {
+  font-family: 'judson-regular';
+  color: #fff;
+  letter-spacing: 3px;
+  margin: 15px 20px;
+}
+
+.header__user {
+  display: flex;
+  text-align: center;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-family: 'raleway-black';
+  background-color: #FAD049;
+  color: #0E1330;
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  margin: 15px;
+  padding: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.main {
+  margin: 50px 150px;
+  color: #0E1330;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.search {
+  font-family: 'raleway-light';
+}
+
+.search__label {
+  font-size: 1.6rem;
+}
+
+.search__form {
+  display: flex;
+  flex-direction: row;
+}
+
+.search__icon {
+  height: 35px;
+  width: auto;
+  margin-right: 15px;
+}
+
+.search__input {
+  width: 20%;
+  margin-right: 25px;
+  font-size: 1rem;
+  font-family: 'raleway-light' !important;
+}
+
+.search__button--all {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  font-family: 'raleway-regular';
+  background-color: #2F60A0;
+  color: #fff;
+  padding: 10px 15px;;
+  box-shadow: 0.5px 0.5px 1px 0.5px #637E92;
+  border: none;
+  cursor: pointer;
+}
+
+.search__button--all:hover {
+  background-color: #719CD6;
+  box-shadow: 0.5px 0.5px 1px 0.5px #92A6B5;
+  color: #C6C5B9;
+}
+
+.search-results {
+  margin: 30px 10% 10px 50px;
+  max-width: 35vw;
+  border-top: 0.5px solid #C6C5B9;
+  border-left: 0.5px solid #C6C5B9;
+  border-right: 0.5px solid #C6C5B9;
+}
+
+.doctor {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 0.5px solid #C6C5B9;
+  padding: 10px;
+}
+
+.doctor__add-doctor-icon {
+  height: 20px;
+  cursor: pointer;
+}
+
+.doctor__add-doctor-icon:hover {
+  opacity: 0.7;
+}
+
+.doctors-list {
+  margin-top: 15px;
+  margin-left: 40px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.doctor-profile {
+  border: 0.5px solid #C6C5B9;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 15px;
+  width: 30vw;
+  min-height: 290px;
+}
+
+.doctor-profile__name {
+  font-family: 'raleway-black';
+  font-size: 2rem;
+  margin: 0 0 5px 0;
+}
+
+.doctor-profile__task {
+  font-family: 'raleway-light';
+}
+
+.doctor-profile__dob {
+  font-family: 'raleway-light';
+  margin-bottom: 15px;
+}
+
+.doctor-profile__task-id {
+  margin-bottom: 5px;
+}
+
+.doctor-profile_task-priority {
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width : 768px) {
+  .main {
+    margin: 20px 25px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .search-results {
+    margin: 15px 0;
+    min-width: 90%;
   }
+
+  .search__form {
+    flex-wrap: wrap;
+  }
+
+  .search__input {
+    border: 1px solid #C6C5B9;
+    min-width: 70%;
+  }
+
+  .doctor-profile {
+    width: 60vw;
+  }
+
+  .doctors-list {
+    margin-left: 0;
+  }
+
+  .search__button--all {
+    margin: 10px;
+    width: 40%;
+    justify-content: center;
+  }
+
 }
